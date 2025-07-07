@@ -1,0 +1,12 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: santhu-service
+  description: A sample service for demo
+  tags:
+    - demo
+    - nodejs
+spec:
+  type: service
+  lifecycle: experimental
+  owner: user:santosh
