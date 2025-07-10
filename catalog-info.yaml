@@ -1,12 +1,8 @@
 apiVersion: backstage.io/v1alpha1
-kind: Component
+kind: MCP
 metadata:
-  name: santhu-service
-  description: A sample service for demo
-  tags:
-    - demo
-    - nodejs
+  name: my-custom-mcp
+  description: My custom MCP kind for demo
 spec:
-  type: service
-  lifecycle: experimental
   owner: user:santosh
+  type: demo
