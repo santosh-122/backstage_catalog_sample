@@ -1,8 +1,28 @@
+# MCP Entity
 apiVersion: backstage.io/v1alpha1
 kind: MCP
 metadata:
   name: my-custom-mcp
   description: My custom MCP kind for demo
 spec:
-  owner: user:santosh
+  owner: user:guest
+  system: my-system
   type: demo
+---
+# User Entity (guest)
+apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: guest
+spec:
+  profile:
+    displayName: Guest User
+  memberOf: [default]
+---
+# System Entity
+apiVersion: backstage.io/v1alpha1
+kind: System
+metadata:
+  name: my-system
+spec:
+  owner: user:guest
